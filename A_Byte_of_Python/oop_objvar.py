@@ -8,15 +8,14 @@ class Robot:
     def __init__(self, name):
         """初始化数据"""
         self.name = name
-        print("(Initializing {})".format(self.name)
+        print("(Initializing {})".format(self.name))
 
-        Robot.population += 1
         # 初始化一次,机器人创建一个
         Robot.population += 1
 
     def die(self):
         """我 gg 了"""
-        print("{} is being destoryed!".format(self.name)
+        print("{} is being destoryed!".format(self.name))
 
         Robot.population -= 1
 
@@ -32,7 +31,7 @@ class Robot:
     @classmethod
     def how_many(cls):
         """打印当前人口数量"""
-        print("We have {:d} robots.".format(Robot.population)
+        print("We have {:d} robots.".format(Robot.population))
 
     
 droid1 = Robot("R2-D2")
@@ -43,10 +42,12 @@ droid2 = Robot("C-3P0")
 droid2.say_hi()
 Robot.how_many()
 
-print("Robots can do some work here.")
+print("\nRobots can do some work here.\n")
 
 print("Robots have finished their work. So let's destory them.")
 droid1.die()
 droid2.die()
-Robot.howmany()
 
+Robot.how_many()
+
+print(Robot.die.__doc__)
