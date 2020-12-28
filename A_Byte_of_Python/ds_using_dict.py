@@ -18,4 +18,3 @@ ab['Guido'] = 'guido@python.org'
 
 if 'Guido' in ab:
     print("\nGuido's address is {}".format(ab['Guido']))
-

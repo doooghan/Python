@@ -9,5 +9,6 @@ def print_max(x, y):
     else:
         print(y, "is maximum")
 
+
 print_max(3, 5)
 print(print_max.__doc__)

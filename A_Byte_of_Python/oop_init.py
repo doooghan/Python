@@ -5,6 +5,6 @@ class Person:
     def say_hi(self):
         print('hello, my name is', self.name)
 
+
 p = Person('ddd')
 p.say_hi()
-        

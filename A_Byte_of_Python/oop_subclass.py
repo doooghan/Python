@@ -1,34 +1,34 @@
 # coding=UTF-8
 
-class SchoolMemer:
+class SchoolMember:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print('(Initialized SchoolMemer: {})'.format(self.name))
+        print('(Initialized SchoolMember: {})'.format(self.name))
 
     def tell(self):
-        print('Name: "{}" Age "{}"'.format(self.name, self.age), end = ' ')
+        print('Name: "{}" Age "{}"'.format(self.name, self.age), end=' ')
 
 
-class Teacher(SchoolMemer):
+class Teacher(SchoolMember):
     def __init__(self, name, age, salary):
-        SchoolMemer.__init__(self,name, age)
+        SchoolMember.__init__(self, name, age)
         self.salary = salary
         print('(Initialized Teacher: {})'.format(self.name))
 
     def tell(self):
-        SchoolMemer.tell(self)
+        SchoolMember.tell(self)
         print('Salary: "{}"'.format(self.salary))
 
 
-class Student(SchoolMemer):
+class Student(SchoolMember):
     def __init__(self, name, age, marks):
-        SchoolMemer.__init__(self, name, age)
+        SchoolMember.__init__(self, name, age)
         self.marks = marks
         print('(Initialized Student: {})'.format(self.name))
 
     def tell(self):
-        SchoolMemer.tell(self)
+        SchoolMember.tell(self)
         print('Marks: "{}"'.format(self.marks))
 
 

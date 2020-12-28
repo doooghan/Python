@@ -1,4 +1,4 @@
-shoplist = ["apple" , "mango", "carrot", "banana"]
+shoplist = ["apple", "mango", "carrot", "banana"]
 
 print("i have", len(shoplist), "items to purchase")
 
@@ -19,4 +19,3 @@ olditem = shoplist[0]
 del shoplist[0]
 print("I bought the", olditem)
 print("My shopping list is now", shoplist)
-

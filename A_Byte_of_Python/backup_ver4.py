@@ -16,7 +16,7 @@ if len(comment) == 0:
     target = today + os.sep + now + '.zip'
 else:
     target = today + os.sep + now + '_' + \
-        comment.replace(' ', '_') + '.zip'
+             comment.replace(' ', '_') + '.zip'
 
 if not os.path.exists(today):
     os.mkdir(today)

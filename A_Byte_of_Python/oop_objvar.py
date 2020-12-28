@@ -33,7 +33,7 @@ class Robot:
         """打印当前人口数量"""
         print("We have {:d} robots.".format(Robot.population))
 
-    
+
 droid1 = Robot("R2-D2")
 droid1.say_hi()
 Robot.how_many()

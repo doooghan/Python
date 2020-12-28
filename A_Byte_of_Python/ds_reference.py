@@ -14,4 +14,3 @@ del mylist[0]
 
 print('shoplist is', shoplist)
 print('mylist is', mylist)
-
