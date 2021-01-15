@@ -3,7 +3,7 @@ favorite_languages = {
     'sarah': 'c',
     'edward': 'ruby',
     'phil': 'python',
-    }
+}
 
 # print("Sarah's favorite language is " +
 #       favorite_languages['sarah'].title() +
@@ -44,6 +44,23 @@ for name in sorted(favorite_languages.keys(), reverse=True):
     print(name.title() + ", thank you for taking the poll!")
 """
 
+"""
 print("The following languages have been mentioned:")
 for language in set(favorite_languages.values()):
     print(language.title())
+"""
+
+favorite_languages_2 = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages_2.items():
+    if len(languages) == 1:
+        print("\n" + name.title() + "'s favorite languages is: " + languages[0])
+    else:
+        print("\n" + name.title() + "'s favorite languages are:")
+        for language in languages:
+            print("\t" + language.title())
