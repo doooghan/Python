@@ -18,5 +18,8 @@ cities = {
     },
 }
 
-for city in cities:
-    
+for city, message in cities.items():
+    # print(city)
+    print(city + " is a big city, its country is " + message["country"] +
+          ", it has a population of " + message['population'] +
+          " and its specialty is " + message["fact"])
