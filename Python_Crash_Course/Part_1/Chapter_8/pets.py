@@ -16,6 +16,7 @@ def describe_pet(pet_name, animal_type='dog'):
 
 describe_pet('willie')
 describe_pet('harry', 'hamster')
+# describe_pet(pet_name='harry', 'hamster')  # error
 describe_pet('harry', animal_type='hamster')
 describe_pet(pet_name='harry', animal_type='hamster')
 describe_pet(animal_type='hamster', pet_name='harry')
