@@ -23,6 +23,7 @@ class Restaurant():
         self.number_served += number
 
 
+"""
 restaurant = Restaurant('hhh', 'coffee')
 print(restaurant.restaurant_name, restaurant.cuisine_type)
 restaurant.describe_restaurant()
@@ -39,3 +40,4 @@ print(restaurant.number_served)
 
 restaurant.increment_number_served(1500)
 print(restaurant.number_served)
+"""

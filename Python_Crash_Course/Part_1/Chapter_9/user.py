@@ -29,6 +29,7 @@ class User:
         self.login_attempts = 0
 
 
+"""
 user_1 = User("dong", "han", 18)
 user_1.describe_user()
 user_1.greet_user()
@@ -39,3 +40,4 @@ user_1.increment_login_attempts()
 print(user_1.get_login_attempts())
 user_1.reset_login_attempts()
 print(user_1.get_login_attempts())
+"""
