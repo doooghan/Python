@@ -13,6 +13,6 @@ def count_words(filename):
         print("The file %s has about %s words." % (filename, str(number)))
 
 
-filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
+filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'programming.txt']
 for filename in filenames:
     count_words(filename)
