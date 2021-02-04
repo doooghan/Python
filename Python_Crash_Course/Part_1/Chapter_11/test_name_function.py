@@ -1,6 +1,6 @@
 import unittest
 
-from Python_Crash_Course.Part_1.Chapter_11.name_function import get_formatted_name
+from name_function import get_formatted_name
 
 
 class NameTestCase(unittest.TestCase):
@@ -11,5 +11,11 @@ class NameTestCase(unittest.TestCase):
         formatted_name = get_formatted_name('janis', 'joplin')
         self.assertEqual(formatted_name, "Janis Joplin")
 
+    def test_first_last_middle_name(self):
+        """能够正确地处理像Wolfgang Amadeus Mozart这样的姓名吗?"""
+        formatted_name = get_formatted_name('wolfgang', 'mozart', 'amadeus')
+        self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
 
-unittest.main()
+
+if __name__ == '__main__':
+    unittest.main()
