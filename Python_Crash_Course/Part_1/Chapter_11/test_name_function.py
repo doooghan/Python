@@ -15,6 +15,6 @@ class NameTestCase(unittest.TestCase):
         self.assertEqual(formatted_name, "Janis Joplin")
 
 
-# 测试必须卸载 main 里面
+# 测试必须写在 main 里面, 或者在命令行执行
 if __name__ == '__main__':
     unittest.main()
