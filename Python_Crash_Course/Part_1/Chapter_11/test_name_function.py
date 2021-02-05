@@ -1,10 +1,13 @@
 import unittest
 
-from Python_Crash_Course.Part_1.Chapter_11.name_function import get_formatted_name
+from name_function import get_formatted_name
 
 
 class NameTestCase(unittest.TestCase):
     """测试name_function.py"""
+
+    def test_something(self):
+        self.assertEqual(True, False)
 
     def test_first_last_name(self):
         """能够正确地处理像Janis Joplin这样的姓名吗？"""
@@ -12,4 +15,6 @@ class NameTestCase(unittest.TestCase):
         self.assertEqual(formatted_name, "Janis Joplin")
 
 
-unittest.main()
+# 测试必须卸载 main 里面
+if __name__ == '__main__':
+    unittest.main()
