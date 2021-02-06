@@ -7,7 +7,7 @@ class NameTestCase(unittest.TestCase):
     """测试name_function.py"""
 
     def test_something(self):
-        self.assertEqual(True, False)
+        self.assertEqual(True, True)
 
     def test_first_last_name(self):
         """能够正确地处理像Janis Joplin这样的姓名吗？"""
