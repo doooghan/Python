@@ -1,7 +1,7 @@
 import matplotlib.pylab as plt
 
-input_values = [1, 2, 3, 4, 5]
-squares = [1, 4, 9, 16, 25]
+input_values = list(range(1, 1001))
+squares = [x ** 2 for x in input_values]
 plt.plot(input_values, squares, linewidth=5)
 
 # 设置图表标题,并给坐标轴加上标签
