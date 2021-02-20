@@ -1,6 +1,15 @@
 from random import choice
 
 
+def get_step():
+    """确定每次漫步的距离和方向，并计算这次漫步将如何移动"""
+    direction = choice([1, -1])
+    distance = choice(range(4))
+    step = direction * distance
+
+    return step
+
+
 class RandomWalk:
     """生成一个随机漫步数据的类"""
 
@@ -17,13 +26,8 @@ class RandomWalk:
         # 不断漫步,直到列表达到制定的长度
         while len(self.x_values) < self.num_points:
             # 决定前进的方向以及沿这个方向前进的距离
-            x_direction = choice([1, -1])
-            x_distance = choice([0, 1, 2, 3, 4])
-            x_step = x_direction * x_distance
-
-            y_direction = choice([1, -1])
-            y_distance = choice([0, 1, 2, 3, 4])
-            y_step = y_direction * y_distance
+            x_step = get_step()
+            y_step = get_step()
 
             # 拒绝原地踏步
             if x_step == 0 and y_step == 0:

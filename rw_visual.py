@@ -5,13 +5,15 @@ from random_walk import RandomWalk
 # 只要程序处于活动状态就,就不断的模拟随机漫步
 while True:
     # 创建一个 RandomWalk 实例,并将其所包含的点都绘制出来
-    rw = RandomWalk(10000)
+    # rw = RandomWalk(10000)
+    rw = RandomWalk()
     rw.fill_walk()
 
     # 设置绘制窗口的尺寸
     plt.figure(dpi=128, figsize=(10, 6))
 
     point_numbers = list(range(rw.num_points))
+    # plt.plot(rw.x_values, rw.y_values, linewidth=1)
     plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors="none", s=1)
     # plt.scatter(rw.x_values, rw.y_values, s=4)
 
