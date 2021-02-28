@@ -2,7 +2,7 @@ import json
 
 from pygal.style import RotateStyle, LightColorizedStyle
 from pygal_maps_world.maps import World
-from country_codes import get_country_code
+from chapter_16.country_codes import get_country_code
 
 # 将数据加载到一个列表中
 filename = 'population_data.json'

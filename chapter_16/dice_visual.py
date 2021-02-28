@@ -1,6 +1,6 @@
 import pygal
 
-from die import Die
+from chapter_16.die import Die
 
 # 创建两个 D6 骰子
 die1 = Die()

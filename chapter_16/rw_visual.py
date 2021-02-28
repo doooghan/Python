@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from random_walk import RandomWalk
+from chapter_16.random_walk import RandomWalk
 
 # 只要程序处于活动状态就,就不断的模拟随机漫步
 while True:
