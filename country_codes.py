@@ -6,6 +6,8 @@ def get_country_code(country_name):
     for code, name in COUNTRIES.items():
         if name == country_name:
             return code
+        if country_name == 'Yemen, Rep.':
+            return 'ye'
 
     # 如果没找到国家就返回 None
     return None
